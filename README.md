@@ -1,1 +1,2 @@
 # simplesocial
+# app using django
