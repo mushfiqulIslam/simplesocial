@@ -5,8 +5,8 @@
 	<div class="content">
 		{% if user.is_authenticated %}
 		<h2>
-			Welcome back
-			<a href="{% url 'posts:for_user' username=user.username %}">@{{user.username }}</a>
+			Welcome back!
+			<a href="{% url 'posts:for_user' username=user.username %}">@{{ user.username }}</a>
 		</h2>
 
     {% endif %}
@@ -15,7 +15,7 @@
 			<p>Welcome to the Groups Page! Select a Group with a shared interest!</p>
 	</div>
 	{% if user.is_authenticated %}
-	<a href="{% url 'groups:create' %}" class="btn btn-md btn-fill btn-warning"><span class="glyphicon glyphicon-plus-sign"></span> Create New Group!</a>
+	<a href="{% url 'groups:create' %}" class="btn btn-md btn-fill btn-warning"><span class="glyphicon glyphicon-plus-sign"></span>Create New Group!</a>
 	{% endif %}
 </div>
 {% endblock %}
